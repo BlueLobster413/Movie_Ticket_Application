@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .hello-msg{
+        font-size: 18px;
+        color: rgb(248, 6, 6);
+        margin-right: 20px;
+        }
+    </style>
+
+    <head>
+        <title>Home Page</title>
+    </head>
+    
+    <body>
+        <h3>Puck Wang - Modda Kuduvu MAN!!</h3>
+
+        <span class="hello-msg">Hello, {{request.user}}</span>
+        <span ><a  class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
+        <span ><a  class="hello-msg" href="{% url 'emailsent' %}">Send Confirmation Email</a></span>
+    </body>
+</html>
